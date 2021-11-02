@@ -5,22 +5,27 @@
 * License: https://bootstrapmade.com/license/
 */
 
+/*IMPORTS*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
 body {
   background: #fff;
   color: #666666;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  /*font-family: "Open Sans", sans-serif;*/
 }
 
 a {
-  color: #2dc997;
+  color: #ffc000;
   text-decoration: none;
 }
 
 a:hover, a:active, a:focus {
-  color: #2dca98;
+  /*color: #2dca98; FIX*/
+  color: #ffaa00;
   outline: none;
   text-decoration: none;
 }
@@ -31,7 +36,8 @@ p {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  /*font-family: "Poppins", sans-serif;*/
   font-weight: 400;
   margin: 0 0 20px 0;
   padding: 0;
@@ -47,7 +53,7 @@ h1, h2, h3, h4, h5, h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #2dc997;
+  background: #ffc000;
   width: 40px;
   height: 40px;
   border-radius: 4px;
@@ -59,7 +65,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 0;
 }
 .back-to-top:hover {
-  background: #49d6a9;
+  background: #ffaa00;
   color: #fff;
 }
 .back-to-top.active {
@@ -88,7 +94,8 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 32px;
   margin: 0;
   line-height: 1;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  /*font-family: "Poppins", sans-serif;*/
   font-weight: 700;
   letter-spacing: 3px;
   text-transform: uppercase;
@@ -117,7 +124,7 @@ h1, h2, h3, h4, h5, h6 {
 # Navigation Menu
 --------------------------------------------------------------*/
 /**
-* Desktop Navigation 
+* Desktop Navigation
 */
 .navbar {
   padding: 0;
@@ -162,7 +169,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 2px;
   bottom: -6px;
   left: 0;
-  background-color: #2dc997;
+  background-color: #ffc000;
   visibility: hidden;
   transform: scaleX(0);
   transition: all 0.3s ease-in-out 0s;
@@ -201,7 +208,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 12px;
 }
 .navbar .dropdown ul a:hover, .navbar .dropdown ul .active:hover, .navbar .dropdown ul li:hover > a {
-  color: #2dc997;
+  color: #ffc000;
 }
 .navbar .dropdown:hover > ul {
   opacity: 1;
@@ -229,7 +236,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /**
-* Mobile Navigation 
+* Mobile Navigation
 */
 .mobile-nav-toggle {
   color: #fff;
@@ -289,7 +296,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #666666;
 }
 .navbar-mobile a:hover, .navbar-mobile .active, .navbar-mobile li:hover > a {
-  color: #2dc997;
+  color: #ffc000;
 }
 .navbar-mobile .getstarted, .navbar-mobile .getstarted:focus {
   margin: 15px;
@@ -315,7 +322,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 12px;
 }
 .navbar-mobile .dropdown ul a:hover, .navbar-mobile .dropdown ul .active:hover, .navbar-mobile .dropdown ul li:hover > a {
-  color: #2dc997;
+  color: #ffc000;
 }
 .navbar-mobile .dropdown > .dropdown-active {
   display: block;
@@ -398,8 +405,8 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
 }
 #hero .btn-get-started:hover {
-  background: #2dc997;
-  border: 2px solid #2dc997;
+  background: #ffc000;
+  border: 2px solid #ffc000;
 }
 
 /*--------------------------------------------------------------
@@ -419,6 +426,16 @@ section {
   font-weight: 700;
   margin-bottom: 5px;
 }
+
+.section-header-dark .section-title-dark {
+  font-size: 32px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
 .section-header .section-description {
   text-align: center;
   padding-bottom: 40px;
@@ -482,7 +499,10 @@ section {
 #about .about-container .background {
   min-height: 300px;
   background: url(../img/about-img.jpg) center top no-repeat;
+  background-size: cover;
   margin-bottom: 10px;
+  margin-left: 5%;
+  width: 45%;
 }
 #about .about-container .content {
   background: #fff;
@@ -519,10 +539,10 @@ section {
   flex-direction: column;
   text-align: center;
   border-radius: 50%;
-  border: 2px solid #2dc997;
+  border: 2px solid #ffc000;
 }
 #about .about-container .icon-box .icon i {
-  color: #2dc997;
+  color: #ffc000;
   font-size: 24px;
   line-height: 0;
 }
@@ -545,13 +565,16 @@ section {
 /* Facts Section
 --------------------------------*/
 #facts {
-  background: #f7f7f7;
+  /*background: #f7f7f7;*/
+  background: #121212;
   padding: 80px 0 60px 0;
+  color: #ffffff !important;
 }
 #facts .counters span {
   font-size: 48px;
   display: block;
-  color: #2dc997;
+  /*color: #ffc000;*/
+  color: #ffc000;
 }
 #facts .counters p {
   padding: 0;
@@ -590,7 +613,8 @@ section {
   text-align: center;
   width: 72px;
   height: 72px;
-  background: #2dc997;
+  /*background: #ffc000;*/
+  background: #ffc000;
 }
 #services .icon a {
   display: inline-block;
@@ -602,13 +626,13 @@ section {
 }
 #services .box:hover .icon {
   background: #fff;
-  border: 2px solid #2dc997;
+  border: 2px solid #ffc000;
 }
 #services .box:hover .icon i {
-  color: #2dc997;
+  color: #ffc000;
 }
 #services .box:hover .icon a {
-  color: #2dc997;
+  color: #ffc000;
 }
 #services .title {
   font-weight: 700;
@@ -666,8 +690,8 @@ section {
   color: #fff;
 }
 #call-to-action .cta-btn:hover {
-  background: #2dc997;
-  border: 2px solid #2dc997;
+  background: #ffc000;
+  border: 2px solid #ffc000;
 }
 
 /* Portfolio Section
@@ -698,7 +722,7 @@ section {
 }
 #portfolio #portfolio-flters li:hover, #portfolio #portfolio-flters li.filter-active {
   color: #fff;
-  background: #2dc997;
+  background: #ffc000;
 }
 #portfolio #portfolio-flters li:last-child {
   margin-right: 0;
@@ -720,7 +744,7 @@ section {
   bottom: -50px;
   z-index: 3;
   transition: all ease-in-out 0.3s;
-  background: #2dc997;
+  background: #ffc000;
   padding: 15px 20px;
 }
 #portfolio .portfolio-item .portfolio-info h4 {
@@ -773,10 +797,10 @@ section {
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid #2dc997;
+  border: 1px solid #ffc000;
 }
 .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #2dc997;
+  background-color: #ffc000;
 }
 .portfolio-details .portfolio-info {
   padding: 30px;
@@ -812,8 +836,10 @@ section {
 /* Team Section
 --------------------------------*/
 #team {
-  background: #fff;
+  /*background: #fff;*/
+  background: #121212;
   padding: 80px 0 60px 0;
+  color: #ffffff;
 }
 #team .member {
   text-align: center;
@@ -844,7 +870,7 @@ section {
   color: #b3b3b3;
 }
 #team .member .social a:hover {
-  color: #2dc997;
+  color: #ffc000;
 }
 #team .member .social i {
   font-size: 18px;
@@ -866,7 +892,7 @@ section {
 }
 #contact .info i {
   font-size: 32px;
-  color: #2dc997;
+  color: #ffc000;
   float: left;
   line-height: 0;
 }
@@ -900,7 +926,7 @@ section {
   line-height: 0;
 }
 #contact .social-links a:hover {
-  background: #2dc997;
+  background: #ffc000;
   color: #fff;
 }
 #contact .php-email-form .error-message {
@@ -946,17 +972,17 @@ section {
   font-size: 14px;
 }
 #contact .php-email-form input::focus, #contact .php-email-form textarea::focus {
-  background-color: #2dc997;
+  background-color: #ffc000;
 }
 #contact .php-email-form button[type=submit] {
-  background: #2dc997;
+  background: #ffc000;
   border: 0;
   padding: 10px 24px;
   color: #fff;
   transition: 0.4s;
 }
 #contact .php-email-form button[type=submit]:hover {
-  background: #51d8ad;
+  background: #ffaa00;
 }
 @-webkit-keyframes animate-loading {
   0% {
@@ -979,7 +1005,8 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: #343b40;
+  /*background: #343b40;*/
+  background: #121212;
   padding: 30px 0;
   color: #fff;
   font-size: 14px;
@@ -993,3 +1020,16 @@ section {
   font-size: 13px;
   color: #ccc;
 }
+
+
+/********Custom*********/
+
+.flex-around {
+  display: flex;
+  justify-content: space-around;
+}
+
+
+/***Notes*****/
+/* Key Color: (hover) #2dca98 */
+/* Key Color: (main) #2dc997 */
