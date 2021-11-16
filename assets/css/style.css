@@ -1029,6 +1029,9 @@ section {
   justify-content: space-around;
 }
 
+.highlightText {
+  color: #ffc000;
+}
 
 /***Notes*****/
 /* Key Color: (hover) #2dca98 */
